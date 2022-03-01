@@ -5,10 +5,41 @@ section {
     height: 100vh;
     background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 
+    #containerLoginPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 15%;
+        color: #E0E0E0;
+    }
+
     #containerLogin {
         display: flex;
         flex-direction: column;
         width: 50%;
-        background: blue;
+        color: #E0E0E0;
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 5%;
+
+        #userLogin {
+            display: flex;
+            justify-content: start;
+            width: 75%;
+            border: solid 1px red;
+        }
+    }
+
+    #error {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5%;
+    }
+    
 }

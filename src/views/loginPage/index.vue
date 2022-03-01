@@ -1,10 +1,8 @@
 <template>
-
     <div>
         <loginLeft />
         <loginRight />
-    </div>
-    
+    </div> 
 </template>
 
 <script>
@@ -21,5 +19,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import './index.scss'
+    div {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
 </style>

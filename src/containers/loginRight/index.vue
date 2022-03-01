@@ -1,6 +1,6 @@
 <template> 
     <section>
-        <img src="@/assets/white_logo.png" alt="">
+        <img src="@/assets/compassuol-logo-white - Copia.png" alt="">
     </section>
 </template>
 
