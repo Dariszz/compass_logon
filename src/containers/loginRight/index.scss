@@ -1,0 +1,14 @@
+section {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-image: url('../../assets/login.png');
+    background-position: center;
+    background-size: cover;
+
+    img {
+        height: 50px;
+        padding-top: 2%;
+    }
+}
