@@ -12,7 +12,7 @@ div {
         text-align: right;
         align-items: center;
         color: #FFFFFF;
-        font-size: 10.5px;
+        font-size: 9px;
     }
 
     #footerButton {
@@ -20,7 +20,7 @@ div {
         grid-column: 8;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 12px;
         background: transparent;
     }
 
@@ -32,7 +32,7 @@ div {
         text-align: center;
         background: #FFFFFF;
         color: #C13216;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     span {
@@ -52,7 +52,7 @@ div {
         display: flex;
         align-items: center;
         text-align: right;
-        font-size: 12px;
+        font-size: 10px;
         grid-column: 4;
         color: #FFFFFF;
         background: transparent;
@@ -69,11 +69,11 @@ div {
         background: transparent;
 
         .seconds {
-            font-size: 12px;
+            font-size: 10px;
         }
 
         .secondsNumber {
-            font-size: 30px;
+            font-size: 32px;
         }
     }
 }
