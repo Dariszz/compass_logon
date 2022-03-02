@@ -8,4 +8,30 @@ div {
         margin-left: 3%;
         margin-top: 1%;
     }
+
+    #clockDate {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        margin-top: 2%;
+
+        .clock {
+            font-size: 107px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 14px;
+        }
+    }
+
+    #weather {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: end;
+        margin-top: 1%;
+        margin-right: 3%;
+    }
 }

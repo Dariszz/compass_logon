@@ -1,7 +1,7 @@
 div {
     display: grid;
     position: relative;
-    grid-template-columns: 15.6% 28.6% 7.8% 5.5% 5% 23.5% 7% 7%;
+    grid-template-columns: 15.6% 28.6% 7.8% 5.5% 8% 20.5% 7% 7%;
     background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
     color: white;
     height: 10vh;
@@ -33,5 +33,47 @@ div {
         background: #FFFFFF;
         color: #C13216;
         font-size: 14px;
+    }
+
+    span {
+        display: flex;
+        grid-column: 3;
+        justify-content: center;
+        align-items: center;
+
+        #divSpan {
+            height: 45px;
+            margin-right: 35%;
+            border-left: 1px solid #FFFFFF;
+        }
+    }
+
+    #refresh {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        font-size: 12px;
+        grid-column: 4;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    #timer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background: transparent;
+
+        .seconds {
+            font-size: 12px;
+        }
+
+        .secondsNumber {
+            font-size: 30px;
+        }
     }
 }

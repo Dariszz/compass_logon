@@ -3,16 +3,27 @@ div {
     justify-content: space-between;
     height: 70vh;
 
-    img {
+
+    #ballLogo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 100%;
         width: 30%;
+        margin-top: 4%;
+
+        img {
+            width: 55vh;
+        }
     }
 
     #content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 4%;
         text-align: end;
+        margin-right: 7%;
     }
 
     .titleHome {
