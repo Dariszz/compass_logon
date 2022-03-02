@@ -1,0 +1,38 @@
+div {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+
+    img {
+        width: 30%;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 4%;
+        text-align: end;
+    }
+
+    .titleHome {
+        font-size: 24px;
+        margin: 0;
+        font-weight: bold;
+        color: #C12D18;
+    }
+
+    .titleHomeContainer {
+        font-size: 50px;
+        margin: 0;
+        font-weight: bold;
+        color: #C12D18;
+    }
+
+    .textHome {
+        font-size: 18px;
+        padding-top: 0.5%;
+        margin-bottom: 3%;
+        color: #222222;
+    }
+}

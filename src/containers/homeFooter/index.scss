@@ -1,0 +1,37 @@
+div {
+    display: grid;
+    position: relative;
+    grid-template-columns: 15.6% 28.6% 7.8% 5.5% 5% 23.5% 7% 7%;
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+    color: white;
+    height: 10vh;
+
+    .footerText {
+        display: flex;
+        grid-column: 2;
+        text-align: right;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 9px;
+    }
+
+    #footerButton {
+        display: flex;
+        grid-column: 8;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        background: transparent;
+    }
+
+    #continueFooterTest {
+        display: flex;
+        flex-direction: column;
+        grid-column: 7;
+        justify-content: center;
+        text-align: center;
+        background: #FFFFFF;
+        color: #C13216;
+        font-size: 12px;
+    }
+}
