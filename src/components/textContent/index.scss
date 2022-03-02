@@ -1,3 +1,4 @@
+// Login Page
 .messageHello {
     font-size: 12px; 
     margin-top: 7%;
@@ -10,4 +11,75 @@
     font-size: 12px;
     width: 70%;
     text-align: center;
+}
+
+// Home Page
+.textHome {
+    font-size: 18px;
+    padding-top: 0.5%;
+    margin-bottom: 3%;
+    color: #222222;
+}
+
+.footerText {
+    display: flex;
+    grid-column: 2;
+    text-align: right;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 9px;
+}
+
+.seconds {
+    font-size: 10px;
+}
+
+.secondsNumber {
+    font-size: 32px;
+}
+
+// Medias Login Page
+@media (max-width: 769px) {
+    .messageHello {
+        width: 135%;
+    }
+
+    .messageError {
+        width: 80%;
+    }
+}
+
+@media (max-width: 376px) {
+    .messageHello {
+        width: 140%;
+    }
+
+    .messageError {
+        width: 81%;
+    }
+}
+
+@media (max-width: 321px) {
+    .messageHello {
+        width: 164%;
+    }
+
+    .messageError {
+        font-size: 10px;
+        width: 90%;
+    }
+}
+
+// Media Home Page
+
+@media (max-width: 1271px) {
+    .textHome {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1022px) {
+    .textHome, .footerText, .seconds, .secondsNumber, .refreshContent {
+        display: none;
+    }
 }

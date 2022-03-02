@@ -11,3 +11,33 @@ div {
         margin-bottom: 5%;
     }
 }
+
+.titleHome {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #C12D18;
+}
+
+.titleHomeContainer {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: #C12D18;
+}
+
+@media (max-width: 1271px) {
+    .titleHome {
+        font-size: 21px;
+    }
+    
+    .titleHomeContainer {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1022px) {
+    .titleHome, .titleHomeContainer {
+        display: none;
+    }
+}

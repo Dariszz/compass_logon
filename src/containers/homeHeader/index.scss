@@ -35,3 +35,12 @@ div {
         margin-right: 3%;
     }
 }
+
+@media (max-width: 1021px) {
+
+    div {
+        #clockDate, #weather {
+            display: none;
+        }
+    }
+}

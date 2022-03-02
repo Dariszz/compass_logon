@@ -1,7 +1,7 @@
 <template>
     <div>
-        <loginLeft />
-        <loginRight />
+        <loginLeft id="left" />
+        <loginRight id="right" />
     </div> 
 </template>
 

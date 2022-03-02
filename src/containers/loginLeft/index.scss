@@ -18,6 +18,10 @@ section {
         flex-direction: column;
         width: 50%;
         color: #E0E0E0;
+
+        @media (max-width: 376px) {
+            margin-top: 25%;
+        }
     }
 
     form {
@@ -41,5 +45,10 @@ section {
         width: 100%;
         margin-top: 5%;
     }
-    
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 100%;
+    }
 }

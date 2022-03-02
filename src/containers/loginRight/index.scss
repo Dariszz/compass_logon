@@ -13,3 +13,10 @@ section {
         height: 12%;
     }
 }
+
+@media (max-width: 600px) {
+    section {
+        width: 0;
+        justify-content: flex-end;
+    }
+}
