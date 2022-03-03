@@ -1,11 +1,13 @@
 <template>
     <div class="divLogin" v-bind:class="{button:button}">
-        <input v-bind:class="titleClass" v-bind:placeHolder="placeHolder" v-bind:type="type" v-bind:value="value">
-        <img v-bind:src="require(`@/assets/${src}.png`)" alt="" v-if="src"> 
+        <!-- v-bind:xxx == :xxx -->
+        <input v-bind:class="titleClass" :placeHolder="placeHolder" :type="type" :value="value" v-model="model" @input="askMutation">
+        <img :src="require(`@/assets/${src}.png`)" alt="" v-if="src"> 
     </div>
 </template>
 
 <script>
+import {mapMutations} from 'vuex'
 export  default {
     name: 'Input',
     props: {
@@ -26,8 +28,27 @@ export  default {
             },
             button: {
                 default: false,
+            },
+    },
+
+    data() {
+        return {
+            model: '',
+        }
+    },
+
+    methods: {
+        ...mapMutations(["attUser", "attPassword"]),
+        // chamando a mutation necessária
+        askMutation() {
+            console.log(this.type, this.model);
+            if (this.type == 'text') {
+                this.attUser(this.model)
+            }else if(this.type == 'password') {
+                this.attPassword(this.model)
             }
-        },
+        }
+    },
 }
 </script>
 

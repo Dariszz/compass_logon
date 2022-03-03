@@ -14,9 +14,7 @@
             <textContent textClass="continueFooter" text="Continuar navegando" />
         </div>
         
-         <div id="footerButton">
-             <textContent textClass="footerButton" text="Logout" />
-         </div> 
+         <div id="footerButton" @click="execLogout">Logout</div> 
          
     </div>
 </template>
@@ -24,10 +22,16 @@
 <script>
 import textContent from '@/components/textContent/index.vue'
 import timer from '@/components/timer/index.vue'
+import router from '@/router/index.js'
 export default {
     components: {
         textContent,
         timer
+    },
+    methods: {
+        execLogout(){
+            router.push({name: 'Login'})
+        }
     }
 }
 </script>

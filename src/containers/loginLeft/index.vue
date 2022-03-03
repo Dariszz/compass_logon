@@ -7,7 +7,7 @@
             </div>
             <div>
                 <titleContent type="h3" titleClass="messageLogin" text="Login"/>
-                <form>
+                <form @submit.prevent="execLogin">
                     <Input placeHolder="   Usuario" type="text" titleClass="textLogin" src="logo_user" />
                     <Input placeHolder="   Senha" type="password" titleClass="passwordLogin" src="logo_password" />                   
                     <div id="error">
@@ -24,6 +24,8 @@
 import textContent from '@/components/textContent/index.vue'
 import titleContent from '@/components/title/index.vue'
 import Input from '@/components/input/index.vue'
+import router from '@/router/index.js'
+import { mapMutations, mapState } from 'vuex'
     export default {
         name: 'loginLeft',
         components: {
@@ -31,6 +33,20 @@ import Input from '@/components/input/index.vue'
             textContent,
             Input,
         },
+        methods: {
+            ...mapMutations(["reset"]),
+            execLogin() {
+                if(this.user == 'admin' && this.password == 'admin') {
+                    router.push({name: 'Home'}) 
+                    this.reset()
+                }else {
+                    alert('senha incorreta.')  
+                }
+            }
+        },
+        computed: {
+            ...mapState(["user", "password"])
+        }
     }
 </script>
 
