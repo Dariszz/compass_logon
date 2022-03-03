@@ -7,10 +7,15 @@
 }
 
 .messageError {
+    visibility: hidden;
     color: #E9B425;
     font-size: 12px;
     width: 70%;
     text-align: center;
+}
+
+.visible {
+    visibility: visible;
 }
 
 // Home Page

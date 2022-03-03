@@ -1,5 +1,5 @@
 <template>                                 
-    <div class="divLogin" v-bind:class="{button:button}"> <!--se a prop button for true, vai aplicar a classe button  -->
+    <div class="divLogin" v-bind:class="{button:button, borderError:loginError}"> <!--se a prop button for true, vai aplicar a classe button  -->
         <!-- v-bind:xxx == :xxx -->
         <input v-bind:class="titleClass" :placeHolder="placeHolder" :type="type" :value="value" v-model="model" @input="askMutation">
         <img :src="require(`@/assets/${src}.png`)" alt="" v-if="src" draggable="false"> 
@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import {mapMutations} from 'vuex'
+import {mapMutations, mapState} from 'vuex'
 export  default {
     name: 'Input',
     props: {
@@ -49,6 +49,10 @@ export  default {
             }
         }
     },
+
+    computed: {
+        ...mapState(["loginError"])
+    }
 }
 </script>
 

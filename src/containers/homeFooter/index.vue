@@ -23,14 +23,17 @@
 import textContent from '@/components/textContent/index.vue'
 import timer from '@/components/timer/index.vue'
 import router from '@/router/index.js'
+import { mapMutations } from 'vuex'
 export default {
     components: {
         textContent,
         timer
     },
     methods: {
+        ...mapMutations(["resetError"]),
         execLogout(){
             router.push({name: 'Login'})
+            this.resetError()
         }
     }
 }

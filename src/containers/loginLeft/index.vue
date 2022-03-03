@@ -11,7 +11,7 @@
                     <Input placeHolder="   Usuario" type="text" titleClass="textLogin" src="logo_user" />
                     <Input placeHolder="   Senha" type="password" titleClass="passwordLogin" src="logo_password" />                   
                     <div id="error">
-                        <textContent textClass="messageError" text="Ops, usuário ou senha inválidos. Tente novamente!"/>
+                        <textContent :class="{visible:loginError}" textClass="messageError" text="Ops, usuário ou senha inválidos. Tente novamente!"/>
                     </div>
                     <Input type="submit" value="Continuar" button=true titleClass="buttonInput" />
                 </form>
@@ -34,18 +34,18 @@ import { mapMutations, mapState } from 'vuex'
             Input,
         },
         methods: {
-            ...mapMutations(["reset"]),
+            ...mapMutations(["reset", "errorLogin"]),
             execLogin() {
                 if(this.user == 'admin' && this.password == 'admin') {
                     router.push({name: 'Home'}) 
                     this.reset()
                 }else {
-                    alert('senha incorreta.')  
+                    this.errorLogin()  
                 }
             }
         },
         computed: {
-            ...mapState(["user", "password"])
+            ...mapState(["user", "password", "loginError"])
         }
     }
 </script>
