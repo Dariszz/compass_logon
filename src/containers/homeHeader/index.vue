@@ -2,8 +2,7 @@
     <div>
         <img src="@/assets/black_logo.png" alt="">
         <div id="clockDate">
-            <textContent textClass="clock" text="22:12"/>
-            <textContent textClass="date" text="Terça-feira, 01 de março de 2022"/>
+            <clockDate />
         </div>
 
         <div id="weather">
@@ -15,11 +14,12 @@
 
 <script>
 import textContent from '@/components/textContent/index.vue'
-// import titleContent from '@/components/title/index.vue'
+import clockDate from '@/components/clock/index.vue'
+
 export default {
     components: {
         textContent,
-        // titleContent
+        clockDate
     }
 }
 </script>

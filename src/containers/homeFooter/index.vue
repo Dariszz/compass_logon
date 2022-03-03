@@ -7,7 +7,7 @@
             <textContent textClass="refreshContent" text="Application refresh in" />
         </div>
         <div id="timer">
-             <textContent textClass="secondsNumber" text="600" />
+             <timer />
              <textContent textClass="seconds" text="seconds" />
          </div>
         <div id="continueFooterTest">
@@ -23,9 +23,11 @@
 
 <script>
 import textContent from '@/components/textContent/index.vue'
+import timer from '@/components/timer/index.vue'
 export default {
     components: {
-        textContent
+        textContent,
+        timer
     }
 }
 </script>
