@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="ballLogo">
-            <img src="@/assets/ball_logo_compass.png" alt="">
+            <img src="@/assets/ball_logo_compass.png" alt="" draggable="false">
         </div>
          <div id="content">
              <titleContent type="h1" titleClass="titleHome" text="Our mission is"/>

@@ -2,7 +2,7 @@
     <div class="divLogin" v-bind:class="{button:button}"> <!--se a prop button for true, vai aplicar a classe button  -->
         <!-- v-bind:xxx == :xxx -->
         <input v-bind:class="titleClass" :placeHolder="placeHolder" :type="type" :value="value" v-model="model" @input="askMutation">
-        <img :src="require(`@/assets/${src}.png`)" alt="" v-if="src"> 
+        <img :src="require(`@/assets/${src}.png`)" alt="" v-if="src" draggable="false"> 
     </div>
 </template>
 

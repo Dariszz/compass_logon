@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="@/assets/black_logo.png" alt="">
+        <img src="@/assets/black_logo.png" alt="" draggable="false">
         <div id="clockDate">
             <clockDate />
         </div>

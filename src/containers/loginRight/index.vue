@@ -1,6 +1,6 @@
 <template> 
     <section>
-        <img src="@/assets/compassuol-logo-white - Copia.png" alt="">
+        <img src="@/assets/compassuol-logo-white - Copia.png" alt="" draggable="false">
     </section>
 </template>
 
