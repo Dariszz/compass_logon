@@ -6,20 +6,20 @@
         </div>
 
         <div id="weather">
-            <textContent textClass="locale" text="Juiz de Fora - MG"/>
-            <textContent textClass="degree" text="27°"/>
+            <weather />
         </div>
     </div>
 </template>
 
 <script>
-import textContent from '@/components/textContent/index.vue'
+
 import clockDate from '@/components/clock/index.vue'
+import weather from '@/components/weather/index.vue'
 
 export default {
     components: {
-        textContent,
-        clockDate
+        clockDate,
+        weather
     }
 }
 </script>
