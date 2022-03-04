@@ -1,4 +1,32 @@
 #weather {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    width: 300%;
+    height: 55%;
+    margin: 3% 3% 0 0;
+    color: #222222;
+
+    #degree {
+        display: flex;
+
+        img {
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }
+    }
+
+    #city {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 0 3% 6%;
+    }
+
+    #temperature {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 7% 0 0 0; ;
+    }
+
 }

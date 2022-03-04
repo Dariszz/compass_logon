@@ -5,7 +5,7 @@
             <clockDate />
         </div>
 
-        <div id="weather">
+        <div id="weatherDiv">
             <weather />
         </div>
     </div>
